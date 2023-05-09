@@ -62,4 +62,11 @@ function renderTask(task){
   });
 }
 
+function cheerUserUponCheckbox() {
+  const audioYes = new Audio("audio/yes.mp3");
+  audioYes.play();
+}
+
+
+
 
