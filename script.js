@@ -78,7 +78,11 @@ function showAlert() {
   modalAlertMsg.style.display = "flex";
 }; //called in addChoreBtnFunc()
 
+closeAlertBtn.addEventListener('click', closeAlert);
 
+function closeAlert() {
+    modalAlertMsg.style.display = "none";
+};
 
 
 
