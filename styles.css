@@ -228,15 +228,49 @@ button {
   }
 
   .task-item {
-    padding: 8px;
+    padding: 10px;
   }
 
   .task-text {
-    font-size: 14px;
+    font-size: 16px;
   }
-  
+
   .modal-alert-msg {
     width: 70%;
     top: 4em;
+  }
+}
+
+/* Large screens (desktops) */
+@media screen and (min-width: 1025px) {
+  main {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .button {
+    height: 50px;
+    font-size: 18px;
+  }
+
+  #task {
+    height: 38px;
+    font-size: 18px;
+  }
+
+  .task-item {
+    padding: 10px;
+  }
+
+  .task-text {
+    font-size: 18px;
+  }
+  
+  .modal-alert-msg {
+    width: 50%;
+    top: 6em;
   }
 }
