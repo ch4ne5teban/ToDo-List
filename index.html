@@ -19,6 +19,22 @@
 </head>
 
 <body>
+  <main>
+    <h1>Today's Tasks</h1>
+    <div class="container">
+      <div id="add-task-panel">
+        <input type="text" id="task" placeholder="Make the bed" maxlength="40" required>
+        <button type="submit" title="Add Task" id="add-chore">-></button>
+        <button type="reset" title="Delete All Tasks" id="delete-all-tasks">✕</button>
+      </div>
+
+      <div id="tasks-list-container" class="tasks-list-container">
+        <ul id="tasks-list">
+          <!-- List Items Generated In script.js -->
+        </ul>
+      </div>
+    </div>
+  </main>
 
 </body>
 
