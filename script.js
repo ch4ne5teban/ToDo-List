@@ -76,13 +76,22 @@ function showAlert() {
   }, 500);
 
   modalAlertMsg.style.display = "flex";
-}; //called in addChoreBtnFunc()
+}; //called in addTask()
 
 closeAlertBtn.addEventListener('click', closeAlert);
 
 function closeAlert() {
     modalAlertMsg.style.display = "none";
 };
+
+/*-- RESET BUTTON SCRIPTS*/
+resetTasksListBtn.addEventListener('click', resetBtn);
+
+function resetBtn() {
+  if (resetConfirmation()) {
+    clearTasksAndDisplayGif();
+  }
+}
 
 
 
