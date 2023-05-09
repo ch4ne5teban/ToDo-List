@@ -35,3 +35,9 @@ h1 {
   margin-bottom: 20px;
 }
 
+#add-task-panel {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
