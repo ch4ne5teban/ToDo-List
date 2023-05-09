@@ -159,3 +159,43 @@ button {
   }
 }
 
+/* Small screens (mobile devices) */
+@media screen and (max-width: 480px) {
+  main {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #add-task-panel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button {
+    height: 50px;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #task {
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .task-item {
+    padding: 10px;
+  }
+
+  .task-text {
+    font-size: 18px;
+  }
+
+  .modal-alert-msg {
+    width: 90%;
+    top: 2em;
+  }
+}
