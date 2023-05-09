@@ -109,11 +109,26 @@ function cheerUserUponReset() {
   audioCrowdCheer.play();
 }
 
-
-
-
-
-
-
-
-
+function displayRandomGif() {
+  const gifArray = ["gifs/cheering-crowd1.gif", "gifs/cheering-crowd2.gif", "gifs/cheering-crowd3.gif", "gifs/cheering-crowd4.gif"];
+  const randomIndex = Math.floor(Math.random() * gifArray.length);
+  const randomGif = gifArray[randomIndex];
+  
+  const gif = document.createElement("img");
+  gif.src = randomGif;
+  gif.style.position = "fixed";
+  gif.style.zIndex = 1000;
+  gif.style.left = "50%";
+  gif.style.top = "50%";
+  gif.style.transform = "translate(-50%, -50%)";
+  gif.style.width = "400px";
+  gif.style.height = "400px";
+  gif.style.pointerEvents = "none";
+  gif.style.borderRadius = "5px";
+  
+  document.body.appendChild(gif);
+  
+  setTimeout(() => {
+  document.body.removeChild(gif);
+  }, 6000);
+}
