@@ -104,6 +104,13 @@ function clearTasksAndDisplayGif() {
   tasksList.textContent = "";
 }
 
+function cheerUserUponReset() {
+  const audioCrowdCheer = new Audio("audio/crowd-cheering.mp3");
+  audioCrowdCheer.play();
+}
+
+
+
 
 
 
