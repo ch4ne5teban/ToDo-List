@@ -16,6 +16,7 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Concert One', cursive;
+  color: #372A28;
 }
 
 main {
@@ -58,7 +59,7 @@ button {
   font-family: 'Inter';
   font-weight: bold;
   font-size: larger;
-  color: #000000;
+  color: #372A28;
   border: none;
   border-radius: 5px;
   cursor: pointer;
