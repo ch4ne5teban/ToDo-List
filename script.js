@@ -37,4 +37,29 @@ function checkForDuplicate(task) {
   return false;
 }
 
+function renderTask(task){
+  const taskItem = document.createElement("li");
+  taskItem.classList.add("task-item");
+  
+  const taskText = document.createElement("span");
+  taskText.classList.add("task-text");
+  taskText.textContent = task;
+
+  const taskCheckbox = document.createElement("input");
+  taskCheckbox.type = "checkbox";
+  taskCheckbox.classList.add("task-checkbox");
+
+  taskItem.appendChild(taskCheckbox);
+  taskItem.appendChild(taskText);
+  tasksList.appendChild(taskItem);
+  
+  taskCheckbox.addEventListener("change", () => {
+      taskText.classList.toggle("done");
+
+      if(taskCheckbox.checked) {
+      cheerUserUponCheckbox();
+      }
+  });
+}
+
 
