@@ -26,5 +26,15 @@ function addTask() {
   }
 }
 
+function checkForDuplicate(task) {
+  const tasks = tasksList.getElementsByTagName('li');
+  for (let i = 0; i < tasks.length; i++) {
+    const existingTask = tasks[i].querySelector('.task-text').textContent.trim();
+    if (existingTask === task) {
+      return true;
+    }
+  }
+  return false;
+}
 
 
