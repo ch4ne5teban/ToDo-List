@@ -47,7 +47,7 @@ function renderTask(task){
 
   const taskCheckbox = document.createElement("input");
   taskCheckbox.type = "checkbox";
-  taskCheckbox.classList.add("task-checkbox", "hidden-checkbox");
+  taskCheckbox.classList.add("task-checkbox");
 
   taskItem.appendChild(taskCheckbox);
   taskItem.appendChild(taskText);
