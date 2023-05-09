@@ -114,5 +114,19 @@ button {
   margin-left: 5px; 
 }
 
-
+.modal-alert-msg {
+  display: none; 
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  margin: auto;
+  top: 6em;
+  left: 0;
+  right: 0;
+  background-color: #FFCC68;
+  width: 50%;
+  height: 100px;
+  text-align: left;
+  border-radius: 10px;
+}
 
