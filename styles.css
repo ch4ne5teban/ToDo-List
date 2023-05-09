@@ -62,3 +62,19 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+#add-chore {
+  background-color: #FFCC68;
+}
+
+#delete-all-chores {
+ background-color: #FF9548;
+}
+
+#add-chore:hover {
+  background-color: #45a049;
+}
+
+#delete-all-chores:hover {
+  background-color: red;
+}
