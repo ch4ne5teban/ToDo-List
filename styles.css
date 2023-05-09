@@ -105,3 +105,8 @@ button {
   flex: 1;
 }
 
+.task-text.done {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
