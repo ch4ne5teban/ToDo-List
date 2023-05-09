@@ -111,7 +111,29 @@ button {
 }
 
 .task-checkbox {
-  margin-left: 5px; 
+  position: relative;
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  outline: none;
+  border: 1px solid #777;
+  border-radius: 3px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.task-checkbox:checked {
+  background-color: green;
+}
+
+.task-checkbox:checked::after {
+  content: "✓";
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -35%);
+  font-size: 16px;
 }
 
 .modal-alert-msg {
@@ -268,7 +290,7 @@ button {
   .task-text {
     font-size: 18px;
   }
-  
+
   .modal-alert-msg {
     width: 50%;
     top: 6em;
