@@ -84,3 +84,15 @@ button {
   width: 80%;
 }
 
+.task-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #FBDF7C;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 90%;
+}
+
