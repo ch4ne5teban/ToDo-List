@@ -15,3 +15,16 @@ taskInput.addEventListener('keydown', function(event) {
 
 addTaskBtn.addEventListener('click', addTask);
 
+function addTask() {
+  const task = taskInput.value.trim();
+  
+  if (task && !checkForDuplicate(task) && !null && !undefined){
+      renderTask(task);
+      taskInput.value = "";
+  } else {
+      showAlert();
+  }
+}
+
+
+
