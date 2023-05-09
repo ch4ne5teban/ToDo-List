@@ -67,6 +67,21 @@ function cheerUserUponCheckbox() {
   audioYes.play();
 }
 
+/*-- ALERT MSG MODAL SCRIPTS*/
+function showAlert() {
+  modalAlertMsg.classList.add('shake-modal');
+
+  setTimeout(function() {
+    modalAlertMsg.classList.remove('shake-modal');
+  }, 500);
+
+  modalAlertMsg.style.display = "flex";
+}; //called in addChoreBtnFunc()
+
+
+
+
+
 
 
 
