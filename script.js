@@ -93,6 +93,10 @@ function resetBtn() {
   }
 }
 
+function resetConfirmation() {
+  const taskLiItems = tasksList.getElementsByTagName('li').length;
+  return taskLiItems > 0 ? confirm("Are you sure you've finished all your tasks?") : false;
+}
 
 
 
