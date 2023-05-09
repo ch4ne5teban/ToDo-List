@@ -105,12 +105,12 @@ function clearTasksAndDisplayGif() {
 }
 
 function cheerUserUponReset() {
-  const audioCrowdCheer = new Audio("audio/crowd-cheering.mp3");
+  const audioCrowdCheer = new Audio("media/audio/crowd-cheering.mp3");
   audioCrowdCheer.play();
 }
 
 function displayRandomGif() {
-  const gifArray = ["gifs/cheering-crowd1.gif", "gifs/cheering-crowd2.gif", "gifs/cheering-crowd3.gif", "gifs/cheering-crowd4.gif"];
+  const gifArray = ["media/gifs/cheering-crowd1.gif", "media/gifs/cheering-crowd2.gif", "media/gifs/cheering-crowd3.gif", "media/gifs/cheering-crowd4.gif"];
   const randomIndex = Math.floor(Math.random() * gifArray.length);
   const randomGif = gifArray[randomIndex];
   
