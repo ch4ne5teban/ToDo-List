@@ -63,9 +63,11 @@ function renderTask(task){
 }
 
 function cheerUserUponCheckbox() {
-  const audioYes = new Audio("audio/yes.mp3");
+  const audioYes = new Audio("media/audio/yes.mp3");
   audioYes.play();
 }
+
+
 
 
 
