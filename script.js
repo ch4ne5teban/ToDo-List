@@ -98,6 +98,12 @@ function resetConfirmation() {
   return taskLiItems > 0 ? confirm("Are you sure you've finished all your tasks?") : false;
 }
 
+function clearTasksAndDisplayGif() {
+  cheerUserUponReset();
+  displayRandomGif();
+  tasksList.textContent = "";
+}
+
 
 
 
