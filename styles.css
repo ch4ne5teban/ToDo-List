@@ -63,18 +63,24 @@ button {
   cursor: pointer;
 }
 
-#add-chore {
+#add-task {
   background-color: #FFCC68;
 }
 
-#delete-all-chores {
+#delete-all-tasks {
  background-color: #FF9548;
 }
 
-#add-chore:hover {
+#add-task:hover {
   background-color: #45a049;
 }
 
-#delete-all-chores:hover {
+#delete-all-tasks:hover {
   background-color: red;
 }
+
+#tasks-list-container {
+  list-style-type: none;
+  width: 80%;
+}
+
